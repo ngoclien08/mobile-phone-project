@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Base styles - Mobile first */
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Tablet: (768px and up) */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 54px;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1032px;
+    padding: 0 87px;
+  }
+}
