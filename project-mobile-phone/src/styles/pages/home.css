@@ -1,0 +1,89 @@
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.hero h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Promo Section */
+.promo {
+  background: #ffcc00;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.promo h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.promo-items {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  background: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 20px; /* Bo tròn góc */
+  text-transform: uppercase;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background 0.3s;
+  cursor: pointer;
+}
+
+.promo-item:hover {
+  background: #cc0000;
+  transform: scale(1.1);
+}
+
+.products .container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .promo-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .promo-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

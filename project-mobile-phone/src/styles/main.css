@@ -1,7 +1,14 @@
 @import url(./abstracts/variables.css);
 
+
+@import url(./base/global.css);
 @import url(./base/reset.css);
 @import url(./base/typography.css);
-@import url(./base/global.css);
+
+@import url(./components/button.css);
+@import url(./components/product-card.css);
 
 @import url(./layout/header.css);
+@import url(./layout/footer.css);
+
+@import url(./pages/home.css);
