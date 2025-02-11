@@ -1,89 +1,55 @@
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 20px;
-  background: #f8f9fa;
-}
-
-.hero h1 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.hero p {
-  font-size: 16px;
-  color: #666;
-}
-
-/* Promo Section */
 .promo {
-  background: #ffcc00;
   padding: 20px 0;
-  text-align: center;
 }
 
 .promo h2 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: #333;
-  margin-bottom: 15px;
+  padding: 20px 0;
+  background: #f5f1f1;
 }
 
 .promo-items {
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: row;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.promo-item {
-  background: red;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 20px; /* Bo tròn góc */
-  text-transform: uppercase;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, background 0.3s;
-  cursor: pointer;
+.banner {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.promo-item:hover {
-  background: #cc0000;
-  transform: scale(1.1);
+.banner img {
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-.products .container {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+.products {
+  padding: 20px 0;
 }
 
 .product-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mặc định Mobile */
+  gap: 16px;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .promo-items {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .promo-item {
-    width: 80%;
-    margin: 0 auto;
-  }
-
+@media (min-width: 768px) {
   .product-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
