@@ -2,14 +2,6 @@
   padding: 20px 0;
 }
 
-.promo h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  padding: 20px 0;
-  background: #f5f1f1;
-}
-
 .promo-items {
   display: flex;
   align-items: center;
@@ -17,6 +9,7 @@
   flex-direction: row;
   gap: 15px;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .banner {
@@ -29,10 +22,6 @@
 .banner img {
   border-radius: 5px;
   object-fit: cover;
-}
-
-.products {
-  padding: 20px 0;
 }
 
 .product-list {
@@ -53,3 +42,5 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+
