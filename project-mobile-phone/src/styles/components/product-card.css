@@ -59,7 +59,7 @@
   align-items: center;
   gap: 30px;
   background: linear-gradient(to right, #ffd500d7 70%, #ddd 30%);
-  color: black;
+  color: #000000;
   font-weight: normal;
   border-radius: 20px;
   white-space: nowrap;

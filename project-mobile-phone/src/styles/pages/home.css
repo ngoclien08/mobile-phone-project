@@ -1,8 +1,10 @@
 .home {
   background-color: #f2f4f7;
 }
-.promo-products {
-  margin: 20px 0;
+
+.big-banner {
+  padding: 20px 0;
+  background-color: #ffffff;
 }
 
 .promo-items {
@@ -19,9 +21,9 @@
   display: flex;
   gap: 10px;
   list-style: none;
-  flex-wrap: nowrap;
   align-items: center;
   background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .products-tabs li {

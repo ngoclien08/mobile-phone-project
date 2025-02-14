@@ -33,6 +33,7 @@ img {
 /* Desktop (1024px and up) */
 @media screen and (min-width: 1024px) {
   .container {
+    width: 90%;
     max-width: 1200px;
   }
 }
