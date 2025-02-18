@@ -24,7 +24,9 @@
   align-items: center;
   background-color: #ffffff;
   border-radius: 8px;
+  padding: 10px 0;
 }
+
 
 .products-tabs li {
   flex: 0 0 auto;
