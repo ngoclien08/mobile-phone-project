@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập & Đăng ký</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header container">
+    <div class="logo">
+        <a href="/"><img src="../assets/images/logothegioididong.png" alt="Logo"></a>
+    </div>
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Bạn tìm gì...">
+    </div>
+    <nav class="navbar">
+      <a href="/login" class="icon"><i class="fas fa-user"></i> Đăng nhập</a>
+      <a href="/cart" class="icon"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Box chứa form -->
+    <div class="auth-box">
+        <!-- Tabs chọn giữa Đăng nhập & Đăng ký -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showForm('login')">Đăng nhập</button>
+            <button class="tab-btn" onclick="showForm('register')">Đăng ký</button>
+        </div>
+
+        <!-- Form Đăng nhập -->
+        <div id="login-form" class="form active">
+            <h2>Đăng nhập</h2>
+            <p>Nhập thông tin tài khoản của bạn</p>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Số điện thoại" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <button type="submit" class="btn-submit">Đăng nhập</button>
+                <p class="text-link"><a href="#">Quên mật khẩu?</a></p>
+            </form>
+        </div>
+
+        <!-- Form Đăng ký -->
+        <div id="register-form" class="form">
+            <h2>Đăng ký tài khoản</h2>
+            <p>Nhập thông tin để tạo tài khoản mới</p>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Họ và tên" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Số điện thoại" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                <button type="submit" class="btn-submit">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+          <div class="footer-section">
+              <h4>Tổng đài hỗ trợ</h4>
+              <p>Gọi mua: <a href="tel:1900232460">1900 232 460</a> (8:00 - 21:30)</p>
+              <p>Khiếu nại: <a href="tel:18001062">1800 1062</a> (8:00 - 21:30)</p>
+              <p>Bảo hành: <a href="tel:1900232464">1900 232 464</a> (8:00 - 21:00)</p>
+          </div>
+
+          <div class="footer-section">
+              <h4>Về công ty</h4>
+              <ul>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Tuyển dụng</a></li>
+                  <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section">
+              <h4>Website cùng tập đoàn</h4>
+              <div class="website-links">
+                <a href="#"><img src="../assets/images/topzone.png" alt="TopZone"></a>
+                <a href="#"><img src="../assets/images/dienmayxanh.png" alt="Điện Máy Xanh"></a>
+                <a href="#"><img src="../assets/images/bachhoaxanh.png" alt="Bách Hóa Xanh"></a>
+                <a href="#"><img src="../assets/images/thodienmayxanh.png" alt="Thế Giới Di Động"></a>
+              </div>
+              <div class="social-icons">
+                <a href="#"><img src="../assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../assets/icons/zalo.png" alt="Zalo"></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 Online Mobile Phone Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+  </main>
+
+<script>
+    function showForm(form) {
+        document.getElementById("login-form").classList.remove("active");
+        document.getElementById("register-form").classList.remove("active");
+
+        if (form === "login") {
+            document.getElementById("login-form").classList.add("active");
+            document.querySelector(".tab-btn:nth-child(1)").classList.add("active");
+            document.querySelector(".tab-btn:nth-child(2)").classList.remove("active");
+        } else {
+            document.getElementById("register-form").classList.add("active");
+            document.querySelector(".tab-btn:nth-child(2)").classList.add("active");
+            document.querySelector(".tab-btn:nth-child(1)").classList.remove("active");
+        }
+    }
+</script>
+</body>
+</html>
