@@ -1,0 +1,77 @@
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #007bff;
+  background-color: #fff;
+  color: #93bae4;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.filter-btn:hover {
+  background-color: #eff4f9;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-option {
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-option:hover {
+  border: 1px solid #007bff;
+}
+.screen {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.storage-options {
+  display: flex;
+  gap: 5px;
+}
+
+.storage-options span {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #c2c1c1;
+  font-size: 12px;
+}
+
+.storage-options span:hover {
+  border: 1px solid #7f9ee7;
+}
+
+@media (min-width: 768px) {
+  .filter-container {
+    flex-wrap: wrap;
+  }
+
+  .filter-option {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

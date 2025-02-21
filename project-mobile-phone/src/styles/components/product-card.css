@@ -21,6 +21,17 @@
   padding: 2px;
 }
 
+.product-card .vip-sale {
+  background: #ffcc00;
+  color: black;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 .product-card img {
   border-radius: 8px;
 }
@@ -94,7 +105,6 @@
 .product-card .rating i {
     color: #ffc400;
 }
-
 
 .product-card button {
   background: #e0edfc;
