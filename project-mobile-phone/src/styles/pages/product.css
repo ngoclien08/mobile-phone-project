@@ -1,3 +1,7 @@
+.product {
+  background-color: #f2f4f7;
+}
+
 .filter-container {
   display: flex;
   align-items: center;
@@ -42,6 +46,7 @@
 .filter-option:hover {
   border: 1px solid #007bff;
 }
+
 .screen {
   font-size: 14px;
   color: #666;
