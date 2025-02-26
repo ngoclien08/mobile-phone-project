@@ -199,7 +199,19 @@
         <p class="price">34.990.000đ</p>
         <p class="rating">⭐ 4.9 | 🔥 Đã bán 9.8K</p>
       </div>
-
+    </div>
+    <div class="feedback-box">
+        <p>Bạn có hài lòng với trải nghiệm tìm kiếm thông tin, sản phẩm trên website không?</p>
+        <div class="feedback-options">
+            <div class="feedback-option" onclick="submitFeedback('Hài lòng')">
+                <span>🥰</span>
+                <span>Hài lòng</span>
+            </div>
+            <div class="feedback-option" onclick="submitFeedback('Không hài lòng')">
+                <span>😔</span>
+                <span>Không hài lòng</span>
+            </div>
+        </div>
     </div>
   </main>
   <!-- Footer -->
@@ -240,5 +252,10 @@
       <p>© 2025 Online Mobile Phone Store. All Rights Reserved.</p>
     </div>
   </footer>
+  <script>
+    function submitFeedback(feedback) {
+        alert("Bạn đã chọn: " + feedback);
+    }
+  </script>
 </body>
 </html>
