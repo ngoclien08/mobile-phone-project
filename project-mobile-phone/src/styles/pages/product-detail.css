@@ -1,0 +1,166 @@
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+.product-gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#main-image {
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.thumb {
+  width: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.product-info {
+  text-align: center;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 20px;
+  color: #e60000;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.options {
+  margin-bottom: 15px;
+}
+
+.options label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.buy-now {
+  background: #ff6600;
+  color: white;
+}
+
+.buy-now:hover {
+  background: #cc5500;
+}
+
+.add-to-cart {
+  background: #008000;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background: #006400;
+}
+
+.product-specs,
+.reviews {
+  margin-top: 30px;
+}
+
+.product-specs h2,
+.reviews h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.product-specs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-specs li {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ff6600;
+}
+
+@media (min-width: 768px) {
+  .product-info {
+      text-align: left;
+  }
+
+  button {
+      width: auto;
+      padding: 12px 20px;
+  }
+
+  .product-specs li {
+      text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-detail {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .product-gallery {
+      width: 45%;
+  }
+
+  .product-info {
+      width: 50%;
+  }
+}
