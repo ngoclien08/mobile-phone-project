@@ -1,78 +1,100 @@
 .main-header {
-  background-color: #ff7300;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 15px 20px;
-  justify-content: space-between;
+  background: #eb5757;
+  padding: 10px;
 }
 
 .logo img {
-  height: 40px;
-}
-
-.search-box {
-  flex-grow: 1;
-  margin: 0 10px;
-  position: relative;
-}
-
-.search-box i {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #808080;
-}
-
-.search-box input {
-  width: 100%;
-  padding: 10px 10px 10px 40px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 0 0 5px #0000001a;
+  height: 30px;
 }
 
 .navbar {
   display: flex;
+  gap: 30px;
+  margin-top: 10px;
 }
 
 .navbar a {
-  margin-left: 10px;
-  color: #3b3a3a;
+  font-size: 18px;
+  color: #2b2a2a;
+}
+
+.search-box {
   display: flex;
   align-items: center;
+  background: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  width: 90%;
 }
 
-.navbar a i {
-  margin-right: 5px;
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 5px;
 }
 
-.brand-name {
-  display: none;
-}
+@media screen and (min-width: 768px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
 
-@media (min-width: 768px) {
-  .search-box {
-      margin: 0 15px;
+  .logo {
+    margin-right: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .navbar {
+    gap: 25px;
+    margin-top: 0;
+    margin-left: 10px;
   }
 
   .navbar a {
-      margin-left: 15px;
+    font-size: 16px;
   }
 
-  .brand-name {
-      display: block;
+  .search-box {
+    flex: 1;
+    margin-top: 0;
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .main-header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    margin-right: 40px;
+  }
+
+  .logo img {
+   height: 40px;
+  }
+
   .search-box {
-      margin: 0 20px;
+    flex: 2;
+  }
+
+  .navbar {
+    flex: 1;
+    gap: 40px;
+    justify-content: flex-end;
+    margin-left: 0;
   }
 
   .navbar a {
-      margin-left: 20px;
+    font-size: 20px;
   }
 }
-
-

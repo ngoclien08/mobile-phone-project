@@ -87,7 +87,7 @@
   background: #ddd;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .products-tabs {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -106,7 +106,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .product-list {
     grid-template-columns: repeat(5, 1fr);
   }
