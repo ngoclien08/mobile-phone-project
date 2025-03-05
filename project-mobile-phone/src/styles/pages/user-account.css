@@ -1,0 +1,102 @@
+.user-details, .order-history {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: block;
+  text-align: center;
+}
+
+.user-details {
+  margin-top: 20px;
+}
+
+.info {
+  padding: 15px;
+  display: block;
+  text-align: left;
+  max-width: 90%;
+  background: #ffffff;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.info p {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info p span {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.info hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.order-history {
+  margin-top: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-history table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+.order-history th, .order-history td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.order-history th {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.order-history tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media screen and (min-width: 768px) {
+  .order-history th, .order-history td {
+      font-size: 16px;
+      padding: 12px;
+  }
+  .info {
+      max-width: 70%;
+  }
+  .order-history {
+      max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .info {
+      max-width: 50%;
+  }
+  .order-history {
+      max-width: 70%;
+  }
+}
