@@ -84,9 +84,11 @@ h2 {
       font-size: 16px;
       padding: 12px;
   }
+
   .info {
       max-width: 70%;
   }
+
   .order-history {
       max-width: 80%;
   }
@@ -96,6 +98,7 @@ h2 {
   .info {
       max-width: 50%;
   }
+
   .order-history {
       max-width: 70%;
   }
