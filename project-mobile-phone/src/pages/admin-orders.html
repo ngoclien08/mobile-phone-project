@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Quản lý Đơn hàng</title>
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#"><i class="fa fa-chart-line"></i> Trang chủ</a></li>
+                <li><a href="#"><i class="fa fa-mobile-alt"></i> Sản phẩm</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i> Đơn hàng</a></li>
+                <li><a href="#"><i class="fa fa-users"></i> Người dùng</a></li>
+                <li><a href="#"><i class="fa fa-chart-bar"></i> Báo cáo</a></li>
+            </ul>
+        </aside>
+        <main class="admin-order container">
+            <h2>Quản lý Đơn hàng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã ĐH</th>
+                        <th>Khách hàng</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>#DHDH001</td>
+                        <td>Nguyễn An</td>
+                        <td>10,000,000 VNĐ</td>
+                        <td>Đã giao</td>
+                        <td>
+                            <button class="btn-view">Xem</button>
+                            <button class="btn-cancel">Hủy</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>#DH002</td>
+                        <td>Trần Văn B</td>
+                        <td>5,500,000 VNĐ</td>
+                        <td>Chờ xử lý</td>
+                        <td>
+                            <button class="btn-view">Xem</button>
+                            <button class="btn-cancel">Hủy</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
