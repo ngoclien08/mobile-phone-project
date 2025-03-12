@@ -1,0 +1,106 @@
+.admin-user {
+  flex: 1;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.btn-add {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btn-add:hover {
+  background: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+thead {
+  background: #343a40;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  text-align: center;
+}
+
+.btn-edit {
+  background: #ffc107;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-delete {
+  background: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #e0a800;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+}
+
+@media screen and (min-width: 768px) {
+  table {
+      font-size: 18px;
+  }
+
+  th, td {
+      padding: 8px;
+  }
+
+  .btn-add {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .btn-edit, .btn-delete {
+      padding: 4px 8px;
+      font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .admin-user {
+    padding: 40px;
+  }
+
+  table {
+    font-size: 20px;
+  }
+}
