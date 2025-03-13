@@ -1,0 +1,56 @@
+.admin-report {
+  flex: 1;
+  padding: 20px;
+}
+
+.admin-report h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.admin-report table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.admin-report thead {
+  background:  #343a40;
+  color: white;
+}
+
+.admin-report table,
+.admin-report th,
+.admin-report td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.admin-report th {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .admin-report table {
+    font-size: 16px;
+  }
+
+  .admin-report th, .admin-report td {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .admin-report {
+    padding: 40px;
+  }
+
+  .admin-report table {
+    font-size: 18px;
+  }
+}
