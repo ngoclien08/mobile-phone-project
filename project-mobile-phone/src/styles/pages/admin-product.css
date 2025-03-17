@@ -1,6 +1,7 @@
 .admin-product {
   flex: 1;
   padding: 20px;
+  overflow-x: auto;
 }
 
 h2 {
@@ -73,35 +74,65 @@ th {
   background: #c82333;
 }
 
-@media screen and (min-width: 768px) {
-  table {
-      font-size: 18px;
-  }
-
-  th, td {
-      padding: 8px;
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .admin-product {
+    padding: 10px;
   }
 
   .btn-add {
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin: 10px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 12px;
   }
 
   .btn-edit, .btn-delete {
-      padding: 4px 8px;
-      font-size: 12px;
+    padding: 4px 6px;
+    font-size: 10px;
   }
 }
 
+/* Tablet */
+@media screen and (min-width: 768px) {
+  table {
+      font-size: 16px;
+  }
+
+  th, td {
+      padding: 10px;
+  }
+
+  .btn-add {
+      display: inline-block;
+      width: auto;
+  }
+
+  .btn-edit, .btn-delete {
+      padding: 6px 10px;
+      font-size: 14px;
+  }
+}
+
+/* Desktop */
 @media screen and (min-width: 1024px) {
-  .admin-product{
+  .admin-product {
     padding: 40px;
   }
 
   table {
-    font-size: 20px;
+    font-size: 18px;
   }
-
 }
