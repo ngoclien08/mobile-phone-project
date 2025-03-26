@@ -1,12 +1,15 @@
 .admin-user {
   flex: 1;
   padding: 20px;
+  background: #fff;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 15px;
   display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .btn-add {
@@ -19,6 +22,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   vertical-align: middle;
+  transition: 0.3s;
 }
 
 .btn-add:hover {
@@ -34,13 +38,13 @@ table {
 }
 
 thead {
-  background: #343a40;
+  background: #2c3e50;
   color: white;
 }
 
 table, th, td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 12px;
   text-align: left;
 }
 
@@ -54,6 +58,7 @@ th {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 3px;
+  transition: 0.3s;
 }
 
 .btn-delete {
@@ -63,6 +68,7 @@ th {
   cursor: pointer;
   border-radius: 3px;
   color: white;
+  transition: 0.3s;
 }
 
 .btn-edit:hover {
@@ -73,25 +79,61 @@ th {
   background: #c82333;
 }
 
+@media screen and (max-width: 767px) {
+  table thead {
+    display: none;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 10px;
+  }
+
+  td {
+    text-align: left;
+    padding: 8px;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .admin-user {
+    padding: 30px;
+  }
+
   table {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   th, td {
-      padding: 8px;
+    padding: 10px;
   }
 
   .btn-add {
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin: 10px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
   }
 
   .btn-edit, .btn-delete {
-      padding: 4px 8px;
-      font-size: 12px;
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
 
