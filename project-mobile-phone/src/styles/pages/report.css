@@ -1,56 +1,96 @@
 .admin-report {
-  flex: 1;
   padding: 20px;
+  background: #fff;
+  width: 100%;
 }
 
 .admin-report h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .admin-report table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
-  font-size: 14px;
   margin-top: 10px;
-}
-
-.admin-report thead {
-  background:  #343a40;
-  color: white;
+  background: white;
 }
 
 .admin-report table,
 .admin-report th,
 .admin-report td {
   border: 1px solid #ddd;
+}
+
+.admin-report th,
+.admin-report td {
   padding: 12px;
-  text-align: left;
+  text-align: center;
 }
 
 .admin-report th {
-  text-align: center;
-  font-weight: bold;
+  background: #2c3e50;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .admin-report table thead {
+      display: none;
+  }
+
+  .admin-report table,
+  .admin-report tbody,
+  .admin-report tr,
+  .admin-report td {
+      display: block;
+      width: 100%;
+  }
+
+  .admin-report tr {
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      padding: 10px;
+  }
+
+  .admin-report td {
+      text-align: left;
+      padding: 8px;
+      position: relative;
+  }
+
+  .admin-report td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #2c3e50;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .admin-report table {
-    font-size: 16px;
+  .admin-report {
+      padding: 20px;
   }
 
-  .admin-report th, .admin-report td {
-    padding: 10px;
+  .admin-report table {
+      font-size: 18px;
+  }
+
+  .admin-report th,
+  .admin-report td {
+      padding: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .admin-report {
-    padding: 40px;
+      max-width: calc(100% - 300px);
   }
 
   .admin-report table {
-    font-size: 18px;
+      font-size: 20px;
   }
 }
